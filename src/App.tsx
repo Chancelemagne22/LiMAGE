@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './globals.css';
 import Logo from './icon/logo';
 import Faceook from './icon/facebook';
@@ -95,6 +95,7 @@ const App = () => {
   };
   
   const createTile = (index: number) => {
+    index
     const tile = document.createElement("div");
     tile.classList.add("tile");
     return tile;

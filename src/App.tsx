@@ -58,48 +58,7 @@ const App = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      createGrid();
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const createGrid = () => {
-    const wrapper = document.getElementById("tiles");
-    if (!wrapper) return;
-    
-    wrapper.innerHTML = "";
   
-    const columns = Math.floor((document.body.clientWidth + window.innerWidth) / 50);
-    const rows = Math.floor((document.body.clientHeight + window.innerHeight) / 10);
-  
-    wrapper.style.setProperty("--columns", columns.toString());
-    wrapper.style.setProperty("--rows", rows.toString());
-  
-    createTiles(columns * rows);
-  };
-  
-
-  const createTiles = (quantity: number) => {
-    const wrapper = document.getElementById("tiles") as HTMLElement | null;
-    if (!wrapper) return;
-  
-    Array.from(Array(quantity)).forEach((_value, index: number) => {
-      wrapper.appendChild(createTile(index));
-    });
-  };
-  
-  const createTile = (index: number) => {
-    index
-    const tile = document.createElement("div");
-    tile.classList.add("tile");
-    return tile;
-  };
   
   const debounce = (func: Function, delay: number) => {
     let timerId: ReturnType<typeof setTimeout>;
@@ -123,8 +82,6 @@ const App = () => {
   
   return (
     <div className={`structure ${isScrolled ? 'scrolled' : ''}`}>
-      <div id="tiles"></div>
-      <div className="cursor"></div>
       <div className="gradient-circle"></div>
       <div className='iMAGELOGO'>
         <Logo className="logo" />
@@ -156,6 +113,8 @@ const App = () => {
       <p className='image-officers'>iMAGE OFFICERS</p>
       <div className="card-container">
         <div className="card"></div>
+        <div className="card"></div>
+        
         <div className="card">
 
           <p className='pos'>President</p>
@@ -163,6 +122,8 @@ const App = () => {
 
         </div>
         <div className="card"></div>
+        <div className="card"></div>
+
         <div className="card">
           <p className='pos'>Vice-President</p>
           <p className='names'>Jared Jimenez</p>
@@ -174,7 +135,7 @@ const App = () => {
 
         </div>
         <div className="card">
-          <p className='pos'>Assistant Secretary</p>
+          <p className='pos ch'>Assistant Secretary</p>
           <p className='names'>Chris Jann Dale Manabat</p>
 
         </div>
@@ -184,7 +145,7 @@ const App = () => {
 
         </div>
         <div className="card">
-          <p className='pos'>Auditor</p>
+          <p className='pos au'>Auditor</p>
           <p className='names'>Jewel Shannley Cena</p>
 
         </div>

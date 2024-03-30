@@ -40,8 +40,10 @@ body {
     margin: 0;
     color: #000000;
     height: 100vh;
-    overflow: auto;
     overflow-x: hidden;
+    max-height: 110vh;
+    
+
 }
 .structure{
     position: relative;
@@ -49,6 +51,8 @@ body {
     height: 200em;
 
 }
+
+
 .scrolled .iMAGELOGO {
     transform: scale(1.6) translateY(30px); 
     opacity: 0.5; 
@@ -138,16 +142,22 @@ body {
     text-align: center;
     position: relative;
     font-family: 'Akira';
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 1em;
     color: #FF8001;
-    top: 7em;
+    border: #030605 5px solid;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+
+    top: 13em;
     transition: transform 1s ease, filter 1s ease;
     line-height: 0.85;
+    width: 17rem;
+    height: 4rem;
+    
 
 
 }
@@ -164,6 +174,7 @@ body {
     text-align: center;
     display: flex;
     filter: drop-shadow(0 0 0.50rem #ba5d00);
+    
     opacity: 0;
     transition: opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1), transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 
@@ -174,8 +185,20 @@ body {
     transform: scale(1.2) translateY(-2em);
 }
 .long{
-    font-size: 1.6rem;
-    top: 7.5em;
+    font-size: 1rem;
+    top: 12em;
+    width: 22em;
+    height: 3rem;
+    padding-right: 2em;
+    padding-left: 4em;
+    
+
+}
+.ch{
+    top: 13.75em;
+}
+.au{
+    top: 13.75em;
 }
 .pos:hover{
     cursor:pointer;
@@ -185,7 +208,7 @@ body {
     
 }
 .card-container{
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -201,8 +224,8 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    width: 20em;
-    height: 460px;
+    width: 11em;
+    height: 260px;
     border-radius: 10px;
     opacity: 0; 
     transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -210,6 +233,7 @@ body {
     transform: translateY(0px);
     border-radius: 26px;
     background: #ffc78f;
+    
 
 
   }
@@ -220,18 +244,18 @@ body {
 
     opacity: 1; 
 }
-.card:nth-child(1),.card:nth-child(3){
+.card:nth-child(1),.card:nth-child(2),.card:nth-child(4),.card:nth-child(5){
     opacity: 0;
 }
 
-.card:nth-child(2){
+.card:nth-child(3){
     background-image: url('./photos/adrian.jpg');
     background-position-x: 55% ;
     background-size: cover;
 }
 
   
-.card:nth-child(4){
+.card:nth-child(6){
     background-image: url('./photos/JARED.jpeg');
     background-position-x: 50% ;
 
@@ -239,26 +263,26 @@ body {
 }
 
   
-.card:nth-child(5){
+.card:nth-child(7){
     background-image: url('./photos/sofiii.png');
     background-size: cover;
 }
 
   
-.card:nth-child(6){
+.card:nth-child(8){
     background-image: url('./photos/Chris.JPG');
     background-size: cover;
 }
 
   
-.card:nth-child(7){
+.card:nth-child(9){
     background-image: url('./photos/APRILJOY.png');
     background-position-x: 50%;
     background-size: cover;
 }
 
   
-.card:nth-child(8){
+.card:nth-child(10){
     background-image: url('./photos/JEWEL.jpeg');
     background-size:cover;
     
@@ -267,7 +291,7 @@ body {
 }
 
   
-.card:nth-child(9){
+.card:nth-child(11){
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/20230921_Newjeans_Hanni_%ED%8B%B0%EB%B9%84%ED%85%90_01_%28cropped%29.jpg');
     background-size: cover;
 }
@@ -298,31 +322,6 @@ body {
     width: auto;
     padding-right: 1em;
 }
-#tiles{
-    position: absolute;
-    z-index: -20;
-    top: -50vh; 
-    left: -50vw; 
-    right: -50vw; 
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    grid-template-rows: repeat(var(--rows), 1fr);
-    transform: rotate(10deg);
-        
-
-}
-.tile{
-    outline: 1px solid rgb(255, 160, 35);
-    transition: opacity 0.5s ease;
-    width: 100%; 
-    padding-top: 100%;
-    filter: blur(.8px);
-
-}
-.tile:hover {
-    outline: .3px solid rgb(255, 160, 35);
-    opacity: 0; 
-}
 
 
 .department-heads{
@@ -341,14 +340,14 @@ body {
     text-align: center;
     position: relative;
     font-family: 'Akira';
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 1em;
     color: #FF8001;
-    top: 7em;
+    top: 13em;
     transition: transform 1s ease, filter 1s ease;
     line-height: 0.85;
 
@@ -401,8 +400,8 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    width: 20em;
-    height: 460px;
+    width: 11em;
+    height: 260px;
     border-radius: 10px;
     opacity: 0; 
     transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -450,4 +449,118 @@ body {
     background-size: cover;
 }
 
+
+@media screen and (max-width: 768px) {
+    .structure {
+      margin-left: 3em;
+    }
+  
+    .iMAGELOGO {
+      transform: translateY(-2.5em); /* Adjust positioning */
+    }
+  
+    .hello {
+      top: -12em; /* Adjust positioning */
+    }
+  
+    .text {
+      
+      flex-direction: column; /* Stack text vertically */
+    }
+  
+    .we {
+      font-size: 3em; /* Decrease font size */
+    }
+  
+    .are {
+      font-size: 2.5em; /* Decrease font size */
+    }
+  
+    .wimage {
+        text-align: center;
+        font-size: 0.9em; /* Decrease font size */
+      top: -6.3em; /* Adjust positioning */
+        
+      
+    }
+  
+    .imageT {
+      top: -1.3em; /* Adjust positioning */
+        
+      font-size: 6em; /* Decrease font size */
+      transform: translateY(-1em); /* Adjust positioning */
+    }
+  
+    .socialmedia {
+      flex-direction: row; /* Stack social media buttons vertically */
+      top: -13em; /* Adjust positioning */
+    }
+    .socialmedia p{
+        display: none;
+    }
+    .icons{
+        padding: 0;
+    }
+  
+    .app {
+        justify-content: center;
+        border: none;
+      width: 20%; /* Occupy full width */
+      margin-bottom: 1em; /* Add margin between buttons */
+    }
+    .image-officers,.department-heads{
+        font-size: 2em;
+        text-align: center;
+    }
+    .card-container,
+    .card-container-dh {
+      margin-top: 0; /* Add margin at the top */
+    }
+    .card:nth-child(1),
+    .card:nth-child(2),
+    .card:nth-child(4),
+    .card:nth-child(5){
+        display: none;
+    }
+
+
+  
+    .pos,
+    .pos-dh {
+      top: 9.5em; /* Adjust positioning */
+      border: none;
+      font-size: 0.5em;
+      background-color: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 64%, rgba(0,212,255,0) 100%);
+      height: 4em;
+      width: 12em;
+      border-radius: 10px;
+      clip-path: none;
+    }
+  
+    .names,
+    .names-dh {
+
+        opacity: 1;
+      top: 10em; /* Adjust positioning */
+      font-size: 0.5em; /* Decrease font size */
+    }
+  
+    .pos:hover + .names,
+    .names:hover {
+      transform: scale(1) translateY(0); /* Adjust hover effect */
+    }
+  
+    .card,
+    .card-dh {
+      width: 30%;
+      height: 175px; /* Adjust width */
+      margin: 1em auto; /* Center cards */
+    }
+    .long{
+        left: -1em;
+    }
+    .card-container,.card-container-dh{
+        gap: 3em;
+    }
+  }
   

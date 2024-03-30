@@ -452,7 +452,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .structure {
-      margin-left: 3em;
+      margin-left: 0;
     }
   
     .iMAGELOGO {

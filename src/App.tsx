@@ -78,6 +78,9 @@ const App = () => {
   const handleClickTk = () => {
     window.open("https://www.tiktok.com/@image.cvsucarmona", "_blank");
   };
+  const handleClickYt = () => {
+    window.open("https://www.youtube.com/@image.cvsucarmona", "_blank");
+  };
   
   
   return (
@@ -105,7 +108,7 @@ const App = () => {
           <Tiktok className="icons" />
           <p>TIKTOK</p>
         </button>
-        <button className='youtube app'>
+        <button className='youtube app' onClick={handleClickYt}>
           <Youtube className="icons" />
           <p>YOUTUBE</p>
         </button>
@@ -171,12 +174,12 @@ const App = () => {
         <div className="card-dh">
 
           <p className='pos-dh'>Graphic Design Head</p>
-          <p className='names-dh'>Hajie Heramia</p>
+          <p className='names-dh'>Jenro Legarse</p>
 
         </div>
         <div className="card-dh">
           <p className='pos-dh'>Videography Head</p>
-          <p className='names-dh'>Jared Jimenez</p>
+          <p className='names-dh'>Hajie Heramia</p>
         </div>
         <div className="card-dh">
           <p className='pos-dh'>Writing Head</p>

@@ -13,7 +13,6 @@ document.addEventListener("scroll", (event) => {
 
       logoVanishing(lastKnownScrollPosition);
 
-      eventTransition(lastKnownScrollPosition);
 
       logoScaling(lastKnownScrollPosition);
 

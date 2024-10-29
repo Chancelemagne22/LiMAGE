@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+@font-face{
+    font-family: 'Akira';
+    src:url('/font/Akira.otf')format('opentype');
+}
+
+@font-face{
+    font-family: 'Edward';
+    src:url('/font/Edward.TTF')format('truetype');
+}
+
+@font-face{
+    font-family: 'GigaSansExtraBold';
+    src:url('/font/GigaSansExtraBold.otf')format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham-Book';
+    src:url('/font/Gotham-Book.otf')format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham-Medium';
+    src:url('/font/Gotham-Medium.otf')format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham-MediumItalic';
+    src:url('/font/Gotham-MediumItalic.otf')format('opentype');
+}
+.introduction{
+    transform: translateY(clamp(-3.5em, -4.5em, -5em));
+}
+.We{
+    font-family: 'Edward';
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    padding-right: .3em;
+}
+.Are{
+    font-family: 'Gotham-MediumItalic';
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    padding-left: .3em;
+
+}
+.Image{
+    font-family: 'GigaSansExtraBold';
+    font-size: clamp(5rem,10vw, 10rem);
+    color: #ff8001;
+}
+.Indi{
+    transform: translateY(-2em);
+    font-family: 'Gotham-Book';
+    font-size: clamp(1rem, 2vw, 5rem);
+}
+.about h1{
+    font-family: 'Gotham-Book';
+}
+.eventInfo p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(0, 0, 0);
+}
+.officers h1{
+    text-align: center;
+    font-family: 'GigaSansExtraBold';
+    font-size: clamp(2rem,10vw, 5rem);
+    color: #ff8001;
+    padding: 0;
+}
+.officer h1{
+    text-align: center;
+    font-family: 'GigaSansExtraBold';
+    font-size: clamp(1rem, 3vw, 5rem);
+    color: #ff8001;
+    padding: 0;
+}
+
+.depHeadTitle h1{
+    text-align: center;
+    font-family: 'GigaSansExtraBold';
+    font-size: clamp(2rem, 4vw, 7rem);
+    color: #ff8001;
+    padding: 0;
+}
+.head h1{
+    text-align: center;
+    font-family: 'GigaSansExtraBold';
+    font-size: clamp(2rem, 4vw, 7rem);
+    color: #ff8001;
+    padding: 0;
+}

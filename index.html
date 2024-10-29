@@ -1,13 +1,365 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/icon/iMAGE-LOGO-SVG.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WiMAGE</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <script defer src="/functions/logo.js"></script>
+    <!-- <script defer src="./functions/information.js"></script> -->
+
+    <link rel="stylesheet" href="/designs/design.css">
+    <link rel="stylesheet" href="/designs/card.css">
+    <link rel="stylesheet" href="/designs/officerProfiles.css">
+    <link rel="stylesheet" href="/designs/events.css">
+    <link rel="stylesheet" href="/designs/departmentProfiles.css">
+    <link rel="stylesheet" href="/designs/departmentHead.css">
+    <link rel="stylesheet" href="/designs/textDesign.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="logosvg" src="./photos/iMAGE-LOGO-SVG .svg" id="logosvg" alt="IMAGE LOGO">
+
+    </div>
+    <div class="hiddendiv">
+
+    </div>
+    
+    <div class="introSection">
+
+        <p class="introduction">
+            <span class="WeAre"><span class="We">We</span><span class="Are">Are</span></span>             
+            <span class="Image">iMAGE</span> 
+            <span class="Indi">INDIVIDUAL MULTIMEDIA ARTS GUILD & ENTHUSIASTS</span>
+        </p>
+    </div>
+  
+    
+
+
+    <div class="about">
+        <h1>ABOUT US</h1>
+        <div class="about-card">
+            <p class="boutie slidie" id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <p class="boutie slidie" id="two">Porro dolores neque magnam cupiditate veniam, ex dolorum! Aperiam, quod eligendi! </p>
+            <p class="boutie slidie" id="three">Voluptatibus expedita praesentium blanditiis, cupiditate quaerat delectus consequatur suscipit, molestias natus facere aperiam tenetur? </p>
+            <p class="boutie slidie" id="four">Neque eaque provident sed ea iusto molestias?Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <button class="boutie" id="changeAbout" onclick="anikeyframes()">B</button>
+        
+        </div>
+    </div>
+
+
+    <div class="events">
+       
+    </div>
+
+    <div class="officers">
+        <h1>IMAGE OFFICERS</h1>
+        <div class="officersphoto">
+            <div class="card">
+                <img id="slide-1"  src="./photos/PNGs/12.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-2"  src="./photos/PNGs/8.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-3"  src="./photos/PNGs/9.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-4" src="./photos/PNGs/5.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-5" src="./photos/PNGs/3.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-6"  src="./photos/PNGs/4.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-7"  src="./photos/PNGs/6.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-8"  src="./photos/PNGs/7.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-9" src="./photos/PNGs/10.png" alt="">
+
+            </div>
+            <div class="card">
+                <img id="slide-10" src="./photos/PNGs/11.png" alt="">
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="officersProfile">
+        <div class="officer">
+            <h1 class="title">PRESIDENT</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-5" src="./photos/PNGs/3.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title">VICE PRESIDENT</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-6"  src="./photos/PNGs/4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title">SECRETARY</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                 <img id="slide-5" src="./photos/PNGs/5.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title"> ASSISTANT SECRETARY</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-7"  src="./photos/PNGs/6.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title">TREASURER</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-7"  src="./photos/PNGs/7.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title">AUDITOR</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-2"  src="./photos/PNGs/8.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title">INFORMATION OFFICER</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-3"  src="./photos/PNGs/9.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="officer">
+            <h1 class="title">GAD REPRESENTATIVE</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-3"  src="./photos/PNGs/10.png" alt="">
+
+                </div>
+            </div>
+        </div>
+       
+        <div class="officer">
+            <h1 class="title">SOCIAL MEDIA DIRECTOR</h1>
+            <div class="information">
+                <p class="info" id="info"> </p>
+                <div class="profile">
+                    <img id="slide-3"  src="./photos/PNGs/12.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="officer">
+            <h1 class="title">DIGITAL STRATEGIST</h1>
+            <div class="information">
+                <p class="info" id="info"></p>
+                <div class="profile">
+                    <img id="slide-3"  src="./photos/PNGs/11.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="departmentHead">
+        <div class="depHeadTitle">
+            <h1>Department Head</h1>
+
+        </div>
+        <div class="depHeadProfiles">
+            <div class="tiles">
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/13.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/14.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/20.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/21.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+
+                    <div class="profiles">
+                        <img src="./photos/PNGs/15.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/16.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/17.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/18.png" alt="">
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="profiles">
+                        <img src="./photos/PNGs/19.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="headProfiles">
+        <div class="head">
+            <h1 class="title">HEAD PHOTOGRAPHER</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/13.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">CO-HEAD</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/14.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">
+                HEAD WRITER</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/20.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">CO-HEAD</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/21.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">HEAD VIDEOGRAPHER</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/15.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">CO-HEAD</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/16.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">
+                HEAD GRAPHIC DESIGNER</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/17.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">CO-HEAD</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/18.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="title">HEAD WEB DEVELOPER</h1>
+            <div class="information">
+                <p class="info"></p>
+                <div class="profile">
+                    <img src="./photos/PNGs/19.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
 </html>

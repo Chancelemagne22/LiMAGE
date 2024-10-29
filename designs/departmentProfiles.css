@@ -1,0 +1,37 @@
+.headProfiles{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+   
+  
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100svh;
+    padding: 2em 1em;
+
+}
+
+.head .information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.head .information *{
+    min-width: 80vmin;
+    aspect-ratio: 8 / 7;
+    
+    overflow-x: auto; 
+    white-space: nowrap;
+
+}
+.head:nth-of-type(2) .information,
+.head:nth-of-type(4) .information,
+.head:nth-of-type(6) .information,
+.head:nth-of-type(8) .information{
+    flex-direction: row-reverse;
+}

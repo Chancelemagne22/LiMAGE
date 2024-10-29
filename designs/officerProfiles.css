@@ -1,0 +1,46 @@
+.officersProfile{
+    text-align: center;
+}
+
+.officer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100svh;
+    padding: 2em 1em;
+
+
+}
+
+
+.officer .information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.info{
+    transform: translateY(5%);
+    width: 25em;
+    height: 20em;
+    padding: 2em;
+
+}
+.profile{
+    height: 30em;
+    
+}
+.profile img{
+    object-fit: cover;
+    aspect-ratio: 8 / 7;
+    height: 100%;
+}
+.officer:nth-of-type(2) .information,
+.officer:nth-of-type(4) .information,
+.officer:nth-of-type(6) .information,
+.officer:nth-of-type(8) .information,
+.officer:nth-of-type(10) .information{
+
+    flex-direction: row-reverse;
+}

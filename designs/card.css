@@ -1,0 +1,42 @@
+.officers{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../photos/Background/bg1.png');
+    overflow-y: hidden;
+}
+.officersphoto{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+
+}
+.card{
+    transform: translateY(-2em);
+    flex: 1;
+    overflow: hidden;
+    aspect-ratio: 5 / 7;
+
+    border-radius: 5px;
+    width: 100px;
+    transition: all .7s ease;
+
+
+}
+
+.card img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.3);
+}
+
+.card:hover{
+    flex: 5;
+}
+
+.card:hover img{
+    filter: none;
+}
+

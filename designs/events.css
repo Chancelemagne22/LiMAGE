@@ -1,0 +1,88 @@
+.events{
+    background-color: #0d1b2a;
+    overflow: hidden;
+    height: 150svh;
+    
+}
+.event{
+    transform: translateY(-10%);
+    display: flex;
+
+    min-height: 100svh;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em 1em;
+    align-items: center;
+
+}
+.event *{
+    text-align: center;
+    border-radius: .5em;
+    
+}
+.stagger{
+    box-shadow: rgba(177, 198, 216, 0.42) 0px 60px 123px -25px,
+    rgba(148, 167, 183, 0.08) 0px 35px 75px -35px;
+}
+.eventPhoto img{
+    max-width: 25em;
+    min-height: 25em;
+    z-index: 100;
+}
+.eventInfo {
+    max-width: 20em;
+    min-height: 20em;
+
+    display: flex;
+    padding: 1.5em;
+    justify-content: center;
+    background-color: #C3BEF7;
+    
+
+}
+.eventInfo p{
+    transform: translateY(1em);
+}
+
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all 2s normal;
+}
+.hidden:nth-child(2){
+    transform: translateX(10%);
+    transition: all 2s normal;
+}
+
+.show{
+    opacity: 1;
+}
+.show:nth-child(1){
+    transform: perspective(75em) rotateY(10deg) rotateX(10deg) translateX(20%) translateY(10%);
+    
+
+}
+.show:nth-child(2){
+    transform: perspective(75em) rotateY(-10deg) rotateX(10deg) translateX(-20%) translateY(40%);
+}
+
+.stagger:nth-child(1){
+    
+
+    transition-delay: 100ms;
+    
+}
+.stagger:nth-child(2){
+    transition-delay: 250ms;
+
+}
+.stagger:nth-child(3){
+    transition-delay: 100ms;
+
+}
+.stagger:nth-child(4){
+    transition-delay: 250ms;
+
+}
+

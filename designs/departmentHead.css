@@ -1,0 +1,70 @@
+.departmentHead{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100svh;
+    text-align: center;
+    align-items: center;
+
+}
+
+.departmentHead > div{
+    /* border: 1.5px solid green; */
+    min-height: 30em;
+    min-width: 40%;
+}
+.depHeadTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depHeadProfiles{
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    width: 15em;
+}
+.tiles{
+    position: absolute;
+    top: 2em;
+    left: -5em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 140px);
+    grid-auto-rows: 100px;
+    place-self: center;
+    
+}
+.tile{
+    z-index: 1
+}
+.tile:hover{
+    z-index: 10;
+}
+.profiles{
+    overflow: hidden;
+    aspect-ratio: 8 / 7;
+    width: 14em;
+    transition: all .7s ease;
+
+}
+.profiles img{
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(.9);
+    z-index: 10;
+}
+
+.profiles:hover{
+    transform: scale(150%);
+
+}
+.profiles:hover img{
+    filter: none;
+
+}
+.tiles:has(.profiles:hover) .profiles:not(:hover) {
+    filter: blur(3px);
+    opacity: 0.5; 
+}
